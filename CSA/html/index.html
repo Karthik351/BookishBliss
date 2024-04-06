@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/CSA/CSS/style.css">
+  <title>Bookish Bliss</title>
+</head>
+<body>
+  <div class="header">
+    <nav class="nav1">
+      <h1 class="title">Bookish Bliss</h1>
+      <button id="logout-button"><a href="/CSA/html/signout.html">Logout</a></button>
+    </nav>
+  </div>
+  <div class="collection">
+    <h2 class="heading1">Book Collection</h2>
+    <h4 class="heading2">Create, Read, Update or Delete a book</h4>
+  </div>
+  <div class="add">
+    <button class="addabook"><a href="/CSA/html/add_a_book.html">Add a Book</a> </button>
+  </div>
+  <main>
+    <div class="card">
+      <img src="/CSA/pics/book1.jpg" alt="Book Cover 1">
+      <div class="details">
+        <h3>Title: The Art of Happiness</h3>
+        <p>Author: 14th Dalai Lama and Howard C. Cutler</p>
+        <p>Genre: Philosophy</p>
+        <p>Year: 1998</p>
+        <div class="actions">
+          <button class="edit"><a href="edit.html">Edit</a></button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/CSA/pics/book2.jpg" alt="Book Cover 2">
+      <div class="details">
+        <h3>Title: The Maze Runner</h3>
+        <p>Author: James Dashner</p>
+        <p>Genre: Fiction</p>
+        <p>Year: 2009</p>
+        <div class="actions">
+          <button class="edit"><a href="edit.html">Edit</a></button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/CSA/pics/book3.jpg" alt="Book Cover 3">
+      <div class="details">
+        <h3>Title: For 100 Days</h3>
+        <p>Author: Tina St. John</p>
+        <p>Genre: Romance</p>
+        <p>Year: 2016</p>
+        <div class="actions">
+          <button class="edit"><a href="edit.html">Edit</a></button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/CSA/pics/book4.jpg" alt="Book Cover 4">
+      <div class="details">
+        <h3>Title: The Subtle Art of Not Giving a F*ck</h3>
+        <p>Author: Mark Manson</p>
+        <p>Genre: Non-Fiction</p>
+        <p>Year: 2016</p>
+        <div class="actions">
+          <button class="edit"><a href="edit.html">Edit</a></button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/CSA/pics/book5.jpg" alt="Book Cover 5">
+      <div class="details">
+        <h3>Title: Love & Gelato</h3>
+        <p>Author: Jenna Evans Welch</p>
+        <p>Genre: Romance</p>
+        <p>Year: 2016</p>
+        <div class="actions">
+          <button class="edit"><a href="edit.html">Edit</a></button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/CSA/pics/book6.jpg" alt="Book Cover 6">
+      <div class="details">
+        <h3>Title: Terraform Cookbook</h3>
+        <p>Author: Kerim Satirli, Taylor Dolezal</p>
+        <p>Genre: Education</p>
+        <p>Year: 2024</p>
+        <div class="actions">
+          <button class="edit"><a href="edit.html">Edit</a></button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="/CSA/pics/book7.jpg" alt="Book Cover 7">
+      <div class="details">
+        <h3>Title: AWS Cookbook</h3>
+        <p>Author: John Culkin and Mike Zazon</p>
+        <p>Genre: Education</p>
+        <p>Year: 2021</p>
+        <div class="actions">
+          <button class="edit"><a href="edit.html">Edit</a></button>
+          <button class="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get the logout button element
+      var logoutButton = document.getElementById("logout-button");
+      
+      
+      logoutButton.addEventListener("click", function() {
+        // Redirect the user to the signout.html page
+        window.location.href = "signout.html";
+      });
+    });
+  </script>
+  <script src="/CSA/JavaScript/homepage.js"></script>
+</body>
+</html>
